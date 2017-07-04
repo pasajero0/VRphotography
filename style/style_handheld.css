@@ -70,7 +70,7 @@
 			    .layout .d { 
 			    	float: none;
    					margin-bottom: 0%;
-   					padding: 5px;
+   					padding: 2%;
 				}
 
 				.col1 { 
@@ -94,7 +94,7 @@
 
 				.col-txt {
 					padding: ;
-					font-size: 18px;
+					font-size: 14px;
 					color: #459b99;
 					font-family: GOTHIC;
 				}
@@ -125,10 +125,10 @@
 			    }
 /*ПОРТФОЛИО---------------------------------------------------------------------------------------------------PORTFOLIO*/
 				.portfolio-column{
-			    	width: 75%;
-			    	margin-left: 12%;
-			    	margin-right: 12%;
-			    	text-align: center;
+			    	width: 95%;
+    				margin-left: 2%;
+    				margin-right: 2%;
+    				text-align: center;
 			    }
 
 			    .album-service { 
@@ -248,13 +248,14 @@
 
 				}
 				.price-layout div { 
-					float: left;
-					margin-bottom: 3%;	
+					float: none;
+    				padding: 2%;
+   					width: 95%;	
 				}
 				.price-photo{
-					width: 22vw;
-					border-radius: 15px;
-    				margin-left: 6%; 
+					width: 50%;
+    				border-radius: 15px;
+    				margin-left: 25%;
 				}
 
 				.price-col1 { 
@@ -301,14 +302,14 @@
 				.contacts-text .cont-paragraph {
 			    	background-color: ;
 			    	margin: 0 auto;
-			    	width: 70%;
+			    	width: 100%;
 			    	margin-top: 2%;
-			   	    margin-right: 13%; 
+			   	    margin-right: 0%; 
 			   	    margin-bottom: 2%;
 			        padding: 1%;
 			        color: #459b99;
 			        font-family: GOTHIC;
-			        font-size: 20px;
+			        font-size: 15px;
 			    }
 
 			    .contacts-text p a{
