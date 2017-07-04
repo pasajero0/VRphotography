@@ -26,7 +26,7 @@
 				    padding: 1px;
 				    list-style: none;
 				    width: 19%;
-				    font-size: 2vw;
+				    font-size: 2.2vw;
 				    font-family: GOTHIC;
 					
 				}
@@ -58,7 +58,7 @@
 			   	    margin-bottom: 2%;
 			        color: #66cccc;
 			        font-family: GOTHIC;
-			        font-size: 1.5vw;
+			        font-size: 1vw;
 			        text-align: center;
 			    }
 /*О НАС---------------------------------------------------------------------------------------------------ABOUT*/ 
@@ -70,6 +70,7 @@
 			    .layout .d { 
 			    	float: none;
    					margin-bottom: 0%;
+   					padding: 5px;
 				}
 
 				.col1 { 
@@ -452,9 +453,9 @@
 			    }
 
 			   .soc_link{
-			   		height: 5%; 
-			   		width: 5%;
-			   		padding-right: 2%;
+			   		height: 8%; 
+			   		width: 8%;
+			   		padding: 2%;
 			   }
 
 			   .hover-link:hover{ 
