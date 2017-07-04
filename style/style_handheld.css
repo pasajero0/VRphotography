@@ -1,0 +1,464 @@
+/*ШРИФТЫ---------------------------------------------------------------------------------------------------FONTS*/
+				
+				@font-face {
+			        font-family: GOTHIC;
+			 	    src: url(../font/GOTHIC.TTF);
+			    }
+
+/*МЕНЮ---------------------------------------------------------------------------------------------------MENU*/
+			    .menu-block{
+			    	width: 100%;
+			   	    margin: 0 auto;
+			   	    background-color: white;
+			    	display: -webkit-inline-flex;
+			    	display: inline-flex;
+			    	justify-content: center;
+			    }
+
+			    .menu-section-logo {
+			    	margin-top: 2%;
+			    	padding: 0% 2%;
+				    width: 20%;
+			    }
+
+			    .menu-section {
+				    margin-top: 6%;
+				    padding: 1px;
+				    list-style: none;
+				    width: 19%;
+				    font-size: 2vw;
+				    font-family: GOTHIC;
+					
+				}
+
+				.menu-section a {
+					display: block;
+					color: #66cccc;
+    				padding: 8px 5px;
+    				text-align: center;
+    				text-decoration: none;
+    				border-radius: 50px;
+    				border: 1px solid white;
+    				transition: 0.5s;
+    		    }
+
+    		    .menu-section a:hover {
+    				background: #66cccc;
+    				color: white;
+    				border-radius: 50px;
+    				border: 1px solid #66cccc;
+			        transition: 0.5s;
+			        opacity: 0.7;
+				}
+
+				.header {
+			    	width: 100%;
+			    	margin-top: 2%;
+			   	    margin-right: 8%; 
+			   	    margin-bottom: 2%;
+			        color: #66cccc;
+			        font-family: GOTHIC;
+			        font-size: 1.5vw;
+			        text-align: center;
+			    }
+/*О НАС---------------------------------------------------------------------------------------------------ABOUT*/ 
+			    .layout { 
+					
+					margin-top: 1%;
+				}
+
+			    .layout .d { 
+			    	float: none;
+   					margin-bottom: 0%;
+				}
+
+				.col1 { 
+					width: 100%;
+					margin: 0 auto;
+					padding: 0%;	
+				}
+
+				.col2 { 
+					width: 100%;
+					margin: 0 auto;	
+				}
+
+				.photo-VR {
+					display: block;
+					margin: 0 auto;
+					width: 40vw;
+					border-radius: 100%;
+    				box-shadow: 0 0 13px rgba(0,0,0,0.5); 
+    			}
+
+				.col-txt {
+					padding: ;
+					font-size: 18px;
+					color: #459b99;
+					font-family: GOTHIC;
+				}
+
+			    .col-txt .paragraph-link{
+			    	text-decoration: none;
+			    	display: inline-block;
+			    	width: 130px;
+			    	text-align: center;
+			        color: #66cccc;
+			        text-shadow: 1px 1px 0 #377776;
+			        font-family: GOTHIC;
+			        font-size: 2.5vw;
+			        border: 1px solid white;
+			        border-radius: 50px;
+			    }
+
+			    .col-txt .paragraph-link:hover {
+			    	text-decoration: none;
+			        color: white;
+			        font-family: GOTHIC;
+			        cursor: pointer;
+			        opacity: 0.5;
+			        transition: 0.5s;
+			        border: 1px solid #66cccc;
+			        border-radius: 50px;
+			        background-color: #66cccc;
+			    }
+/*ПОРТФОЛИО---------------------------------------------------------------------------------------------------PORTFOLIO*/
+				.portfolio-column{
+			    	width: 75%;
+			    	margin-left: 12%;
+			    	margin-right: 12%;
+			    	text-align: center;
+			    }
+
+			    .album-service { 
+			   		width: 100%;
+			   		margin-top: 3%;
+			   	    margin-right: 8%; 
+			        padding: 0;  
+			        background: white; 
+			    }
+
+			    .album-service div{
+			        font-family: GOTHIC;
+			        border-radius: 10px;
+			        transition: 1s;
+			        padding: 1% 1%;
+			        margin-bottom: 2%;
+			    }
+
+			    .album-service div:hover{
+			        font-family: GOTHIC;
+			        text-shadow: 2px 2px 0 #377776;
+			        opacity: 0.85;
+			        cursor: pointer;
+			        transition: 0.5s;
+			        transform: scale(1.02,1.02);
+			        box-shadow: 0 0 13px rgba(0,0,0,0.5);
+			    }
+			    
+			    .bar-option p{
+			        padding: 8%;
+			        text-align: center;
+			        font-family: GOTHIC;
+			        font-size: 3vw;
+			    }
+
+			    .album-service a{
+			    	color: white;	
+			    }
+			    
+			    .left-column{
+			        float: left;
+			        width: 47%;
+			        min-height: 50%;
+			    }
+
+			    .right-column{
+			        float: right;
+			        width: 47%;
+			        min-height: 50%;
+			    }
+
+			    .wedding { 
+			        background-image: url(../img/wedding.jpg);
+			        background-size:100%;
+			    }
+
+			    .portrait { 
+			        background-image: url(../img/portrait.jpg);
+			        background-size: 100%;
+			    }
+
+			    .love { 
+			        background-image: url(../img/love.jpg);
+			        background-size: 100%;
+			    }
+
+			    .fashion {
+			        background-image: url(../img/fashion.jpg);
+			        background-size: 100%;
+			    }
+
+			    .reportage{ 
+   					background-image: url(../img/reportage.jpg);
+   					background-size: 100%;
+   			    }
+
+			    .family{
+			   		background-image: url(../img/family.jpg);
+			        background-size: 100%;
+			    }
+
+			 /*   .Mportrait{
+			   	    background-image: url(../img/Mportrait.jpg);
+			   	    background-size: 100%;
+			    }
+
+			    .travel{
+			   	    background-image: url(../img/travel.jpg);
+			   		background-size: 100%;
+			    }		*/	    
+/*ИНДЕКС-СЛАЙДЕР---------------------------------------------------------------------------------------------------INDEX-SLIDER*/
+				.margtop {
+			    	margin-top: 60px;
+			    }
+
+			    .main {
+			    	max-width: 1050px;
+			    	max-height: 500px;
+			    	margin: 20px auto;
+			    }
+
+			    .slide {
+			    	outline: none;
+			    	padding: 10px auto;
+			    }
+
+			    .slide img {
+			    	border-radius: 5px;
+			    	margin:  0 auto;
+			    }
+/*ЦЕНЫ---------------------------------------------------------------------------------------------------PRICE*/
+				.price-layout { 
+					
+					margin-top: 1%;
+					margin-right: 8%; 
+					margin-left: 11%;
+
+				}
+				.price-layout div { 
+					float: left;
+					margin-bottom: 3%;	
+				}
+				.price-photo{
+					width: 22vw;
+					border-radius: 15px;
+    				margin-left: 6%; 
+				}
+
+				.price-col1 { 
+					background: ;
+					 width: 30%;
+					 padding: 1%; 
+					}
+				.price-col2 { 
+					background: ; 
+					left: 33%; 
+					width: 30%;
+					padding: 1%;  
+				}
+				.price-col3 { 
+					background: ;
+					right: 0; 
+					width: 30%;
+					padding: 1%;  
+				}
+
+				.price-col-txt {
+					font-size: 15px;
+					color: #459b99;
+					font-family: GOTHIC;
+				}
+
+				.italic {
+					font-style: italic;
+				}
+
+				.price-center-txt {
+					font-size: 20px;
+					color: #66cccc;
+					text-shadow: 1px 1px 0 gray;
+					text-align: center;
+				}
+/*КОНТАКТЫ---------------------------------------------------------------------------------------------------CONTACTS*/
+				.column{
+					width: 73%;
+					margin-left: 12%;
+					margin-right: 12%;
+				}
+
+				.contacts-text .cont-paragraph {
+			    	background-color: ;
+			    	margin: 0 auto;
+			    	width: 70%;
+			    	margin-top: 2%;
+			   	    margin-right: 13%; 
+			   	    margin-bottom: 2%;
+			        padding: 1%;
+			        color: #459b99;
+			        font-family: GOTHIC;
+			        font-size: 20px;
+			    }
+
+			    .contacts-text p a{
+			    	text-decoration: none;
+			    	display: inline-block;
+			    	width: 135px;
+			    	text-align: center;
+			        color: #66cccc;
+			        text-shadow: 1px 1px 0 #377776;
+			        font-family: GOTHIC;
+			        font-size: 22px;
+			        border: 1px solid white;
+			        border-radius: 50px;
+
+			    }
+
+			    .contacts-text p a:hover {
+			    	text-decoration: none;
+			        color: white;
+			        font-family: GOTHIC;
+			        cursor: pointer;
+			        opacity: 0.5;
+			        transition: 0.5s;
+			        border: 1px solid #66cccc;
+			        border-radius: 50px;
+			        background-color: #66cccc;
+			    }
+
+                 .first-column {
+                	float: left;
+			        width: 48%;
+			        height: 100px;
+                }
+
+				 .second-column {
+					float: right;
+			        width: 48%;
+			        height: 100px;
+				}
+
+				.f-text {
+					float: right;
+					padding-left: 8px;
+					padding: 2px;
+					font-size: 17px;
+					width: 65%;
+					margin-bottom: 2%;
+					height: 20px;
+					border-radius: 4px;
+					font-family: GOTHIC;
+					color: #377776;
+					border: 1px solid #d6d6d6;
+				}
+
+				.f-text:focus {
+					outline-color: #66cccc;
+				}
+
+				.f-textarea {
+					padding-left: 8px;
+					font-size: 17px;
+					width: 65%;
+					max-width: 65%;
+					height: 100%;
+					max-height: 100%;
+					border-radius: 4px;
+					font-family: GOTHIC;
+					color: #377776;
+					border: 1px solid #d6d6d6;
+				}
+
+				.f-textarea:focus {
+					outline-color: #66cccc;
+				}
+
+				.clear {
+					height: 150px;
+				}
+
+				.buttons {
+				    width: 100%;
+				    max-width: 250px;
+				    cursor: pointer;
+				    font: normal 14px GOTHIC;
+				    letter-spacing: 3px;
+				    color: #474747;
+				    margin: 0 auto;
+				    background-color: ;
+				}
+
+				.button {
+					width: 100%;
+					height: 100%;
+					font-size: 20px;
+					border: none;
+					background-color: white;
+					color: #66cccc;
+					text-shadow: 1px 1px 0 #377776;
+					cursor: pointer;
+					border-radius: 5px;
+				}
+
+				.button:hover {
+					width: 100%;
+					height: 100%;
+					font-size: 20px;
+					background-color: #66cccc;
+					color: white;
+					cursor: pointer;
+					border-radius: 20px;
+					outline:none;
+					border: none;
+			        opacity: 0.5;
+			        transition: 0.5s;
+				}
+/*ПОДВАЛ---------------------------------------------------------------------------------------------------FOOTER*/
+			    footer{
+			    	width: 100%;
+			   	    margin-right: 8%; 
+			   	    margin-top: 0%;
+			   	    margin-bottom: 5%;
+			        font-family: GOTHIC;
+			        color: #66cccc;
+			        font-size: 1.2vw;
+			        clear: both;
+			   }
+
+			   footer .center_block .footer-text{
+			   		font-size: 1vw;
+			   }
+
+			   .line {
+				    width: 85%; 
+				    height: 1px; 
+				    background: #66cccc; 
+				    border: 0; 
+				    margin: 0 auto;
+				}
+
+			   .center_block{
+			    	text-align: center;
+			    }
+
+			   .soc_link{
+			   		height: 5%; 
+			   		width: 5%;
+			   		padding-right: 2%;
+			   }
+
+			   .hover-link:hover{ 
+			        cursor: pointer;
+			        opacity: 0.6;
+			   }
+			   
