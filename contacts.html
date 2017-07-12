@@ -40,24 +40,22 @@
 			И на сайте свадебных фотографов <a href="https://mywed.ru/ru/photographer/romanovskayav/">MyWed</a></p> -->
          </div>
 
-						<form id="form" method="post" class="form-masage">
-							<input type="hidden" name="project_name" value="Valentina Romanovskaya photograpy">
-							<input type="hidden" name="admin_email" value="valen.romanovskaya@gmail.com">
-							<input type="hidden" name="form_subject" value="Сообщение с сайта VRph">
-							<div>
-								<div class="first-column">
-									<input type="text" name="name" placeholder="Имя" class="f-text" required /><br>
-					                <input type="text" name="phone" placeholder="Телефон" class="f-text" required /><br>
-									<input type="text" name="E-mail" placeholder="Email" class="f-text" required /> <br>
-							   	</div>                            
+						<form action="php/mail.php" method="POST" class="form-masage" >
+						<div>
+							<div class="first-column">
+								<input type="text" name="name" placeholder="Имя" class="f-text" required /><br>
+					            <input type="text" name="phone" placeholder="Телефон" class="f-text" required /><br>
+								<input type="text" name="email" placeholder="Email" class="f-text" required /> <br>
+							</div>                            
 								
-								<div class="second-column">
-									<textarea name="message" placeholder="Сообщение" class="f-textarea" required ></textarea>
-								</div>
-							</div> 
+							<div class="second-column">
+								<textarea name="message" placeholder="Сообщение" class="f-textarea" required ></textarea>
+							</div>
+						</div> 
                             <div class="clear"></div>
 							<div class="buttons" >
-						       		<input type="submit" name="submit" class="button" value="О Т П Р А В И Т Ь" />
+						       	<input type="submit" name="submit" class="button" value="О Т П Р А В И Т Ь" />
+						       	<div class="result"></div>
 						    </div>
 						</form>
 	</div>
@@ -79,7 +77,8 @@
 						<p class="footer-text">My images may not be reproduced in any form without my written permission. If you're interested to buy my work and the rights to use it, feel<br> free to send me a note. Please don't send me notes with requests to use my work on your own website for free.<p>
 			   </div>
 	</footer>
-		<script src="js/jquery-3.2.0.js"></script>
+		<!-- <script src="js/jquery-3.2.0.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/form-script.js"></script>
 	</body>
 </html>

@@ -1,20 +1,11 @@
-$(document).ready(function() {
-
-	//E-mail Ajax Send
-	$("#form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "../php/mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Сообщение успешно отправлено!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
+$ ('[type="submit"]').click(function() {
+	$.post("../php/mail.php", {
+		name: $('[name="name"]').val(),
+		phone: $('[name="phone"]').val(),
+		email: $('[name="email"]').val(),
+		message: $('[name="message"]').val()
+	},
+	function( data ){
+		$(".result").html(data);
 	});
-
-});
+ });
