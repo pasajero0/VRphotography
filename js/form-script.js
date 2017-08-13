@@ -6,6 +6,6 @@ $ ('[type="submit"]').click(function() {
 		message: $('[name="message"]').val()
 	},
 	function( data ){
-		$(".result").html(data);
+		$(".result").html(data); 	
 	});
  });
