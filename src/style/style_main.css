@@ -4,6 +4,15 @@
 	    src: url(../font/GOTHIC.TTF);
 }
 /*АНИМАЦИЯ---------------------------------------------------------------------------------------------------ANIMATION*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 @keyframes bounceInUp {
   from, 60%, 75%, 90%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -19,6 +28,9 @@
   }
 }
 /*МЕНЮ---------------------------------------------------------------------------------------------------MENU*/
+body{
+	animation: fadeIn 1.5s;
+}
 .menu-block{
 	width: 100%;
     margin: 0 auto;

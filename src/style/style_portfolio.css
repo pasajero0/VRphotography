@@ -13,8 +13,23 @@
     opacity: 1;
   }
 }
+@keyframes fadeInDown {
+  from {
+    opacity: 0.7;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+} 
 /*-----------------------------------------------------------------------------MENU*/
-.menu-block{
+body{
+	animation: fadeIn 1.5s;
+	
+}
+.menu-block {
 	width: 100%;
     margin: 0 auto;
     background-color: white;
@@ -74,17 +89,6 @@
 	top: 5%;
 	animation: fadeInDown 1.5s;
 }
-@keyframes fadeInDown {
-  from {
-    opacity: 0.7;
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-} 
 .photoalbum {
 	color:white;
 	text-align: center;
@@ -109,9 +113,6 @@
     opacity: 100;
     text-decoration: none;
 }
-/*   .sub-menu a div:hover .hovered {    	
-	opacity: 0.00001;
-} */
 .sub-menu a div p{
     padding: 7%;
     text-align: center;
@@ -169,6 +170,7 @@
   	align-items: stretch;
   	justify-content: center;
   	cursor: pointer;
+  	animation: fadeIn 1.5s;
 }
 .item2{
 	grid-area: span 2;
@@ -176,6 +178,7 @@
   	align-items: stretch;
   	justify-content: center;
   	cursor: pointer;
+  	animation: fadeIn 1.5s;
 }
 .item .item2 img{
 	transform: scale(1.4);
