@@ -5,7 +5,7 @@ if (!empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['phone'
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$phone = $_POST['phone'];
-	$message = $_POST['message']; 
+	$message = $_POST['message'];
 
 	$to = "valen.romanovskaya@gmail.com";
 	$letter = 'Данные сообщения <br/><br/>

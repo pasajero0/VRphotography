@@ -18,6 +18,12 @@ config = {
             'lodash'
         ]
     },
+    node: {
+      fs : 'empty',
+      net: 'empty',
+      tls: 'empty',
+      dns: 'empty'
+    }, 
     output: {
         path: path.join(__dirname, 'dist'),
         publicPath : '/assets/',

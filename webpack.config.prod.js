@@ -10,6 +10,12 @@ config = {
             './index.js'
         ]
     },
+    node: {
+      fs : 'empty',
+      net: 'empty',
+      tls: 'empty',
+      dns: 'empty'
+    }, 
     output: {
         path: __dirname+"/src/js/dist/",
         publicPath : '/assets/',

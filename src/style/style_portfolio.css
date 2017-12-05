@@ -1,216 +1,342 @@
 /*-----------------------------------------------------------------------------FONT*/
-				@font-face {
-			        font-family: GOTHIC;
-			 	    src: url(../font/GOTHIC.TTF);
-			    }
+@font-face {
+    font-family: GOTHIC;
+	    src: url(../font/GOTHIC.TTF);
+}
+/*АНИМАЦИЯ---------------------------------------------------------------------------------------------------ANIMATION*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 /*-----------------------------------------------------------------------------MENU*/
-			    .menu-block{
-			    	width: 100%;
-			   	    margin: 0 auto;
-			   	    background-color: white;
-			    	display: -webkit-inline-flex;
-			    	display: inline-flex;
-			    	justify-content: center;
-			    }
-
-			    .menu-section-logo {
-			    	padding: 0% 2%;
-				    width: 25%;
-			    }
-
-			    .menu-section {
-				    margin-top: 6%;
-				    padding: 1px;
-				    list-style: none;
-				    width: 11%;
-				    font-size: 1vw;
-				    font-family: GOTHIC;	
-				}
-
-				.menu-section a {
-					display: block;
-					color: #66cccc;
-    				padding: 8px 5px;
-    				text-align: center;
-    				text-decoration: none;
-    				border-radius: 50px;
-    				border: 1px solid white;
-    				transition: 0.5s;
-    		    }
-
-    		    .menu-section a:hover {
-    				background: #66cccc;
-    				color: white;
-    				border-radius: 50px;
-    				border: 1px solid #66cccc;
-			        transition: 0.5s;
-			        opacity: 0.7;
-				}
-
-				.header {
-			    	width: 100%;
-			    	margin-top: 2%;
-			   	    margin-right: 8%; 
-			   	    margin-bottom: 2%;
-			        color: #66cccc;
-			        font-family: GOTHIC;
-			        font-size: 20px;
-			        text-align: center;
-			    }
-
+.menu-block{
+	width: 100%;
+    margin: 0 auto;
+    background-color: white;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	justify-content: center;
+}
+.menu-section-logo {
+	padding: 0% 2%;
+    width: 25%;
+}
+.menu-section {
+    margin-top: 6%;
+    padding: 1px;
+    list-style: none;
+    width: 11%;
+    font-size: 1vw;
+    font-family: GOTHIC;	
+}
+.menu-section a {
+	display: block;
+	color: #66cccc;
+	padding: 8px 5px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50px;
+	border: 1px solid white;
+	transition: 0.5s;
+}
+.menu-section a:hover {
+	background: #66cccc;
+	color: white;
+	border-radius: 50px;
+	border: 1px solid #66cccc;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+.header {
+	width: 100%;
+	margin-top: 2%;
+	margin-right: 8%; 
+	margin-bottom: 2%;
+    color: #66cccc;
+    font-family: GOTHIC;
+    font-size: 20px;
+    text-align: center;
+}
 /*-----------------------------------------------------------------------------SubMENU*/
+.sub-menu {
+	float: left;
+	margin-left: 4%;
+	width: 200px;
+	margin-top: 2%;
+}
+.stop {
+	position: fixed; 
+	top: 5%;
+	animation: fadeInDown 1.5s;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0.7;
+    transform: translate3d(0, -100%, 0);
+  }
 
-			    .sub-menu {
-			    	background-color: ;
-			    	float: left;
-			    	margin-left: 4%;
-			    	width: 200px;
-			    	margin-top: 2%;
-			    }
-
-			    .stop {
-			    	position: fixed; 
-			    	top: 5%;
-			    	animation: fadeInDown 1.5s;
-			    }
-
-				@keyframes fadeInDown {
-				  from {
-				    opacity: 0.7;
-				    transform: translate3d(0, -100%, 0);
-				  }
-
-				  to {
-				    opacity: 1;
-				    transform: none;
-				  }
-				} 
-		    
-			    .photoalbum {
-			    	background-color: olive;
-			    	color:white;
-			    	text-align: center;
-			    	font-size: 55px;
-			    	margin-left: 16%;
-			    	margin-right: 15%;
-			    }
-
-			    .sub-menu a div {
-			    	font-family: GOTHIC;
-			        border-radius: 10px;
-			        width: 11vw;
-			        padding: .1vw;
-			        margin-bottom: 5%;
-			        opacity: 0.65;
-			    }
-
-			    .sub-menu a div:hover {
-			    	text-shadow: 2px 2px 0 #377776;
-			    	border-radius: 10px;
-			        cursor: pointer;
-			        transition: 0.2s;
-			        transform: scale(1.05,1.05);
-			        opacity: 100;
-			    }
-
-			 /*   .sub-menu a div:hover .hovered {    	
-			    	opacity: 0.00001;
-			    } */
-
-			    .sub-menu a div p{
-			        padding: 7%;
-			        text-align: center;
-			        font-family: GOTHIC;
-			        font-size: 1.1vw;
-			        text-shadow: 1.2px 1.2px 0 black;
-			        transition: 0.2s;
-			    }
-
-			    .sub-menu a {
-			    	text-decoration: none;
-			    	color: white;
-			    }
-
-			    .active-briquet {
-			    	text-shadow: 1.5px 1.5px 0 #377776;
-			        cursor: pointer;
-			        transform: scale(1.05,1.05);
-			        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-			        opacity: 100 !important;
-			    }  
-
-			    .wedding { 
-			        background-image: url(../img/wedding.jpg);
-			        background-size:100%;
-			   }
-
-			   .portrait { 
-			        background-image: url(../img/portrait.jpg);
-			        background-size: 100%;
-			   }
-
-			   .love { 
-			        background-image: url(../img/love.jpg);
-			        background-size: 100%;
-			   }
-
-			   .fashion {
-			        background-image: url(../img/fashion.jpg);
-			        background-size: 100%;
-			   }
-
-			   .reportage{ 
-   					background-image: url(../img/reportage.jpg);
-   					background-size: 100%;
-   			   }
-
-			   .family{
-			   		background-image: url(../img/family.jpg);
-			        background-size: 100%;
-			   }
-
-			   .Mportrait{
-			   	background-image: url(../img/Mportrait.jpg);
-			   	background-size: 100%;
-			   }
-
-			   .travel{
-			   	background-image: url(../img/travel.jpg);
-			   	background-size: 100%;
-			   }
-
-
-/*-----------------------------------------------------------------------------FOOTER*/
-			    
-			    footer{
-			    	width: 100%;
-			   		margin-top: 15%;
-			   	    margin-right: 8%; 
-			   	    margin-bottom: 5%;
-			        font-family: GOTHIC;
-			        color: #66cccc;
-			        font-size: 0.8vw;
-			        clear: both;
-			   }
-			   footer div p {
-			   		font-size: 0.6vw;
-			   }
-
-			   .line {
-				    width: 55%; 
-				    height: 1px; 
-				    background: #66cccc; 
-				    border: 0; 
-				    margin: 0 auto;
-				}
-			   .center_block{
-			    	text-align: center;
-			    }
-			   .soc_link{
-			   		height: 2%; 
-			   		width: 2%;
-			   }
-			   .hover-link:hover{ 
-			        cursor: pointer;
-			        opacity: 0.6;
-			   }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+} 
+.photoalbum {
+	color:white;
+	text-align: center;
+	font-size: 55px;
+	margin-left: 23.5%;
+	margin-right: 23.6%;
+}
+.sub-menu a div {
+	font-family: GOTHIC;
+    border-radius: 10px;
+    width: 11vw;
+    padding: .1vw;
+    margin-bottom: 5%;
+    opacity: 0.65;
+}
+.sub-menu a div:hover {
+	text-shadow: 2px 2px 0 #377776;
+	border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    transform: scale(1.05,1.05);
+    opacity: 100;
+    text-decoration: none;
+}
+/*   .sub-menu a div:hover .hovered {    	
+	opacity: 0.00001;
+} */
+.sub-menu a div p{
+    padding: 7%;
+    text-align: center;
+    font-family: GOTHIC;
+    font-size: 1.1vw;
+    text-shadow: 1.2px 1.2px 0 black;
+    transition: 0.2s;
+}
+.sub-menu a {
+	text-decoration: none;
+	color: white;
+}
+.active-briquet {
+	text-shadow: 1.5px 1.5px 0 #377776;
+    cursor: pointer;
+    transform: scale(1.05,1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    opacity: 100 !important;
+}  
+.wedding { 
+    background-image: url(../img/wedding.jpg);
+    background-size:100%;
+}
+.portrait { 
+    background-image: url(../img/portrait.jpg);
+    background-size: 100%;
+}
+.love { 
+    background-image: url(../img/love.jpg);
+    background-size: 100%;
+}
+.fashion {
+    background-image: url(../img/fashion.jpg);
+    background-size: 100%;
+}
+.reportage{ 
+	background-image: url(../img/reportage.jpg);
+	background-size: 100%;
+}
+.family{
+	background-image: url(../img/family.jpg);
+    background-size: 100%;
+}
+.Mportrait{
+	background-image: url(../img/Mportrait.jpg);
+	background-size: 100%;
+}
+.travel{
+	background-image: url(../img/travel.jpg);
+	background-size: 100%;
+}
+/*-----------------------------------------------------------------------------GALLERY-BLOCK*/			   
+.item{
+	display: flex;
+  	align-items: stretch;
+  	justify-content: center;
+  	cursor: pointer;
+}
+.item2{
+	grid-area: span 2;
+	display: flex;
+  	align-items: stretch;
+  	justify-content: center;
+  	cursor: pointer;
+}
+.item .item2 img{
+	transform: scale(1.4);
+  	overflow: hidden;
+}
+.grid div a {
+	display: flex;
+	align-items: stretch;
+}
+.grid { 
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+@media (max-width: 2400px) {
+	.grid { 
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+@media (max-width: 1925px) {
+	.grid { 
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+@media (max-width: 1445px) {
+	.grid { 
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (max-width: 1050px) {
+	.grid { 
+		display: grid;
+		grid-gap: 5px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%; 
+    height: 100%;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 100;
+    animation: fadeIn 0.5s;
+}
+.gap{
+	height: 1%;
+}
+.sheet{
+	display: inline-flex;
+	padding-left: 4vw;
+	animation: fadeIn 0.4s;
+}
+.close-btn{
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	margin-left: 92%;
+	border-radius: 5px;
+	overflow: hidden;
+	transition: .3s;
+}
+.clear-ico{
+	color: gray;
+	display: flex;
+	justify-content: center;
+	font-size: 40px !important;
+}
+.close-btn:hover .clear-ico{
+	color: white;
+	transition: .3s;
+	opacity: 1;
+}
+.chevron{
+	color: gray;
+	display: flex;
+	font-size: 7vw !important;
+	text-align: center;
+	margin-top: 17vw;
+	margin-bottom: 19vw;
+	transition: .3s;
+}
+.chevron:hover{
+	color: white;
+	transition: .3s;
+	opacity: 1;
+}	
+.GalleryPhotoSlide {
+	display: flex;
+	width: 80vw;
+}
+.backward{
+	display: inline-flex;
+	justify-content: flex-end;
+	width: 5vw;
+	height: 850px;
+}
+.forward{
+	display: inline-flex;
+	justify-content: flex-start;
+	width: 5vw;
+	height: 850px;
+}
+.hovered:hover i{	
+		cursor: pointer;
+}
+.GalleryPhotoSlide img {
+	max-width: 1280px;
+	max-height: 800px;
+	border-radius: 5px;
+	margin:  0 auto;
+}
+@media (max-width: 1445px) {
+	.GalleryPhotoSlide img {
+		max-width: 980px;
+		max-height: 680px;
+	}
+}
+@media (max-width: 1050px) {
+  	.GalleryPhotoSlide img {
+		max-width: 680px;
+		max-height: 480px;
+	}
+}
+/*-----------------------------------------------------------------------------FOOTER*/			    
+footer{
+	width: 100%;
+	margin-top: 15%;
+    margin-right: 8%; 
+    margin-bottom: 5%;
+    font-family: GOTHIC;
+    color: #66cccc;
+    font-size: 0.8vw;
+    clear: both;
+}
+footer div p {
+	font-size: 0.6vw;
+}
+.line {
+    width: 55%; 
+    height: 1px; 
+    background: #66cccc; 
+    border: 0; 
+    margin: 0 auto;
+}
+.center_block{
+	text-align: center;
+}
+.soc_link{
+	height: 2%; 
+	width: 2%;
+}
+.hover-link:hover{ 
+    cursor: pointer;
+    opacity: 0.6;
+}
