@@ -124,7 +124,7 @@
 			        background-color: #66cccc;
 			    }
 /*ПОРТФОЛИО---------------------------------------------------------------------------------------------------PORTFOLIO*/
-				.portfolio-column{
+				.portfolio-columns{
 			    	width: 95%;
     				margin-left: 2%;
     				margin-right: 2%;
@@ -431,7 +431,6 @@
 			   	    margin-right: 8%; 
 			   	    margin-top: 0%;
 			   	    margin-bottom: 5%;
-			        font-family: GOTHIC;
 			        color: #66cccc;
 			        font-size: 1.2vw;
 			        clear: both;

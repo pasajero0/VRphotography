@@ -29,27 +29,23 @@
 }
 /*МЕНЮ---------------------------------------------------------------------------------------------------MENU*/
 body{
+	font-family: GOTHIC;
+	margin: 0;
 	animation: fadeIn 1.5s;
 }
 .menu-block{
-	width: 100%;
-    margin: 0 auto;
-    background-color: white;
 	display: inline-flex;
 	justify-content: center;
+	width: 100%;
 }
 .menu-section-logo {
 	padding: 0% 2%;
     width: 25%;
 }
-
 .menu-section {
     margin-top: 6%;
-    padding: 1px;
-    list-style: none;
     width: 11%;
-    font-size: 1vw;
-    font-family: GOTHIC;	
+    font-size: 1vw;	
 }
 .menu-section a {
 	display: block;
@@ -59,82 +55,67 @@ body{
 	text-decoration: none;
 	border-radius: 50px;
 	border: 1px solid white;
-	transition: 0.5s;
+	transition: 1s;
 }
 .menu-section a:hover {
 	background: #66cccc;
 	color: white;
 	border-radius: 50px;
 	border: 1px solid #66cccc;
-    transition: 0.5s;
+    transition: 1s;
     opacity: 0.7;
 }
 .header {
 	width: 100%;
-	margin-top: 2%;
-    margin-right: 8%; 
+	margin-top: 2%; 
     margin-bottom: 2%;
     color: #66cccc;
-    font-family: GOTHIC;
     font-size: 20px;
     text-align: center;
 }
 /*О НАС---------------------------------------------------------------------------------------------------ABOUT*/ 
-.layout { 
+.about-container { 
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	margin-top: 1%;
-	margin-right: 8%; 
-	margin-left: 11%;
 }
-.layout .d { 
-	float: left;
-	margin-bottom: 3%;	
-}
-.col1 { 
-	margin-left: 11%;
-	max-height: 200%;
-	width: 35%;
-	padding: 1%;
-}
-.col2 { 
-	width: 28vw;
-	padding: 1%;  
+.col-photo {
+	width: 530px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .photo-VR {
-	width: 27vw;
-	border-radius: 100%;
-	margin-top: 25%;
-	box-shadow: 0 0 13px rgba(0,0,0,0.5); 
+	width: 520px;
+	border-radius: 50%;
+	box-shadow: 0 0 15px rgba(0,0,0,1); 
 }
 .col-txt {
-	font-size: 17px;
-	color: #459b99;
-	font-family: GOTHIC;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 530px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 16px;
+	color: #333333;
+	text-align: justify;
+}
+.col-txt p {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .col-txt .paragraph-link{
-	text-decoration: none;
 	display: inline-block;
-	width: 90px;
-	text-align: center;
-    color: #66cccc;
-    text-shadow: 1px 1px 0 #377776;
-    font-family: GOTHIC;
-    font-size: 15px;
-    border: 1px solid white;
-    border-radius: 50px;
+    color: #459b99;
 }
 .col-txt .paragraph-link:hover {
 	text-decoration: none;
-    color: white;
-    font-family: GOTHIC;
     cursor: pointer;
-    opacity: 0.5;
     transition: 0.5s;
-    border: 1px solid #66cccc;
-    border-radius: 50px;
-    background-color: #66cccc;
 }
 /*ПОРТФОЛИО---------------------------------------------------------------------------------------------------PORTFOLIO*/
-.portfolio-column{
+.portfolio-columns{
 	width: 75%;
 	margin-left: 12%;
 	margin-right: 12%;
@@ -148,15 +129,13 @@ body{
     background: white; 
 }
 .album-service div{
-    font-family: GOTHIC;
     border-radius: 10px;
     transition: 1s;
     padding: 1% 1%;
     margin-bottom: 2%;
 }
 .album-service div:hover{
-    font-family: GOTHIC;
-    text-shadow: 2px 2px 0 #377776;
+    text-shadow: 0px 0px 10px black;
     opacity: 0.85;
     cursor: pointer;
     transition: 0.5s;
@@ -206,16 +185,7 @@ body{
 .family{
 	background-image: url(../img/family.jpg);
     background-size: 100%;
-}
-/*   .Mportrait{
-	    background-image: url(../img/Mportrait.jpg);
-	    background-size: 100%;
-}
-
-.travel{
-	    background-image: url(../img/travel.jpg);
-		background-size: 100%;
-}		*/	    
+}    
 /*ИНДЕКС-СЛАЙДЕР---------------------------------------------------------------------------------------------------INDEX-SLIDER*/
 .margtop {
 	margin-top: 60px;
@@ -247,7 +217,8 @@ body{
 .price-photo{
 	width: 22vw;
 	border-radius: 15px;
-	margin-left: 6%; 
+	margin-left: 6%;
+	overflow: hidden; 
 }
 .price-col1 { 
 	background: ;
@@ -268,35 +239,39 @@ body{
 }
 .price-col-txt {
 	font-size: 15px;
-	color: #459b99;
+	color: #333333;
 	font-family: GOTHIC;
 }
 .italic {
 	font-style: italic;
 }
 .price-center-txt {
-	font-size: 20px;
-	color: #66cccc;
-	text-shadow: 1px 1px 0 gray;
+	font-size: 18px;
+	color: #555555;
 	text-align: center;
 }
 /*КОНТАКТЫ---------------------------------------------------------------------------------------------------CONTACTS*/
 .column{
-	width: 73%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*width: 73%;
 	margin-left: 12%;
-	margin-right: 12%;
+	margin-right: 12%;*/
 }
-.contacts-text .cont-paragraph {
-	background-color: ;
-	margin: 0 auto;
+.contacts-text {
 	width: 70%;
+}
+.cont-paragraph {
 	margin-top: 2%;
-    margin-right: 13%; 
     margin-bottom: 2%;
-    padding: 1%;
-    color: #459b99;
-    font-family: GOTHIC;
-    font-size: 20px;
+    color: #333333;
+    font-size: 16px;
+    text-align: justify;
+}
+.cont-paragraph span {
+	text-decoration: underline;
 }
 .contacts-text p a{
 	text-decoration: none;
@@ -322,27 +297,28 @@ body{
     border-radius: 50px;
     background-color: #66cccc;
 }
- .first-column {
+.form-message {
+	width: 70%;
+}
+.first-column {
 	float: left;
     width: 48%;
-    height: 100px;
+    height: 120px;
 }
- .second-column {
+.second-column {
 	float: right;
     width: 48%;
-    height: 100px;
+    height: 120px;
 }
 .f-text {
 	float: right;
 	padding-left: 8px;
-	padding: 2px;
-	font-size: 17px;
+	padding: 5.5px;
 	width: 65%;
 	margin-bottom: 2%;
 	height: 20px;
 	border-radius: 4px;
-	font-family: GOTHIC;
-	color: #377776;
+	color: #777777;
 	border: 1px solid #d6d6d6;
 }
 .f-text:focus {
@@ -350,14 +326,13 @@ body{
 }
 .f-textarea {
 	padding-left: 8px;
-	font-size: 17px;
 	width: 65%;
 	max-width: 65%;
 	height: 100%;
 	max-height: 100%;
 	border-radius: 4px;
 	font-family: GOTHIC;
-	color: #377776;
+	color: #777777;
 	border: 1px solid #d6d6d6;
 }
 .f-textarea:focus {
@@ -366,7 +341,7 @@ body{
 .clear {
 	height: 150px;
 }
-.buttons {
+.button-cont {
     width: 100%;
     max-width: 250px;
     cursor: pointer;
@@ -379,40 +354,31 @@ body{
 .button {
 	width: 100%;
 	height: 100%;
-	font-size: 20px;
-	border: none;
-	background-color: white;
-	color: #66cccc;
-	text-shadow: 1px 1px 0 #377776;
-	cursor: pointer;
-	border-radius: 5px;
-}
-.button:hover {
-	width: 100%;
-	height: 100%;
-	font-size: 20px;
+	font-size: 18px;
+	padding: 8px;
 	background-color: #66cccc;
 	color: white;
 	cursor: pointer;
-	border-radius: 20px;
 	outline:none;
 	border: none;
-    opacity: 0.5;
+    opacity: 0.7;
+	border-radius: 20px;
+}
+.button:hover {
+	box-shadow: 0px 0px 5px gray;
+	cursor: pointer;
     transition: 0.5s;
 }
 /*ПОДВАЛ---------------------------------------------------------------------------------------------------FOOTER*/
 footer{
 	width: 100%;
-	margin-top: 15%;
-    margin-right: 8%; 
-    margin-bottom: 5%;
-    font-family: GOTHIC;
-    color: #66cccc;
-    font-size: 0.8vw;
+	margin-top: 10%; 
+    margin-bottom: 1%;
     clear: both;
 }
 footer .center_block .footer-text{
 	font-size: 0.6vw;
+	color: #777777;
 }
 .line {
     width: 55%; 
@@ -422,7 +388,10 @@ footer .center_block .footer-text{
     margin: 0 auto;
 }
 .center_block{
+	margin-top: 1%;
+	margin-bottom: 1%;
 	text-align: center;
+	color: #333333;
 }
 .soc_link{
 	height: 2%; 

@@ -34,15 +34,11 @@
 		    <div class="contacts-text">
 				<p class="cont-paragraph">	Если Вам понравились мои работы, и Вы хотите заказать фотосессию или предложить какого-либо рода сотрудничество, свяжитесь со мной любым удобным Вам способом:</p> 
 
-				<p class="cont-paragraph">По телефону (What'sApp, Viber): <strong>+38 (099) 119 63 73</strong>  <br> 
-				Или на почту: <strong>valen.romanovskaya@gmail.com</strong><br>
-			<!-- 	Написав мне <a href="https://vk.com/valen.romanovskaya">Вконтакте</a></p><br> -->
+				<p class="cont-paragraph">По телефону (What'sApp, Viber, Telegram):  <span>+38 099 119 63 73</span><br> 
+				Или на почту:  <span>valen.romanovskaya@gmail.com</span><br>
 				<p class="cont-paragraph">Или заполнив форму ниже:</p>
-			<!-- Также я есть в <a href="https://www.instagram.com/valen.romanovskaya/">Instagram</a><br> 
-				И на сайте свадебных фотографов <a href="https://mywed.ru/ru/photographer/romanovskayav/">MyWed</a></p> -->
 		    </div>
 			<form action="php/mail.php" method="POST" class="form-message">
-			<!-- <form class="form-message"> -->
 			<div>
 				<div class="first-column">
 					<input type="text" name="name" placeholder="Имя" class="f-text" required /><br>
@@ -54,51 +50,28 @@
 				</div>
 			</div> 
 		    <div class="clear"></div>
-			<div class="buttons" >
+			<div class="button-cont" >
 		       	<input type="submit" name="submit" class="button" value="О Т П Р А В И Т Ь" />
 		       	<div align="center" class="result"></div>
 		    </div>
 			</form>
 		</div>
 		<footer>
-		<div>
-			<br><br><br>
-		</div>	
-		<div class = "line" align="center"></div><br><br>
-		<div class="center_block">
+		<div class = "line" align="center"></div>
+	   	<div class="center_block">
 			<a href="https://vk.com/romanovskaya.photo"><img class="hover-link soc_link" src="img/vk_icon.jpg"></a>
 			<a href="https://www.instagram.com/valen.romanovskaya/"><img class="hover-link soc_link" src="img/insta_icon.jpg"></a>
 			<a href="https://mywed.ru/ru/photographer/romanovskayav/"><img class="hover-link soc_link" src="img/mywed_icon.jpg"></a>
-		</div><br>
-		<div class="center_block">
-			+38 (099) 119 63 73<br>
+		</div>
+	    <div class="center_block">
+	    	+38 (099) 119 63 73<br>
 			valen.romanovskaya@gmail.com<br><br>
 			Copyright 2017 © Valentina Romanovskaya - All rights reserved<br>
 			<p class="footer-text">My images may not be reproduced in any form without my written permission. If you're interested to buy my work and the rights to use it, feel<br> free to send me a note. Please don't send me notes with requests to use my work on your own website for free.<p>
-		</div>
-		</footer>
+	   </div>
+	</footer>
 		<script src="js/jquery-3.2.0.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/form-script.js"></script>
-		<!-- <script>
-			$(document).ready(function() {
-				$("form").submit(function() {
-					const th = $(this);
-					$.ajax({
-						type: "POST",
-						url: "php/mail.php",
-						data: th.serialize()
-					}).done(function() {
-						alert("Thank you!");
-						setTimeout(function() {
-							// Done Functions
-							th.trigger("reset");
-						}, 1000);
-					});
-					return false;
-				});
-
-			});
-		</script> -->
 	</body>
 </html>

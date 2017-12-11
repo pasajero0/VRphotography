@@ -26,16 +26,13 @@
 } 
 /*-----------------------------------------------------------------------------MENU*/
 body{
+	font-family: GOTHIC;
 	animation: fadeIn 1.5s;
-	
 }
-.menu-block {
-	width: 100%;
-    margin: 0 auto;
-    background-color: white;
-	display: -webkit-inline-flex;
+.menu-block{
 	display: inline-flex;
 	justify-content: center;
+	width: 100%;
 }
 .menu-section-logo {
 	padding: 0% 2%;
@@ -43,11 +40,8 @@ body{
 }
 .menu-section {
     margin-top: 6%;
-    padding: 1px;
-    list-style: none;
     width: 11%;
-    font-size: 1vw;
-    font-family: GOTHIC;	
+    font-size: 1vw;	
 }
 .menu-section a {
 	display: block;
@@ -57,23 +51,21 @@ body{
 	text-decoration: none;
 	border-radius: 50px;
 	border: 1px solid white;
-	transition: 0.5s;
+	transition: 1s;
 }
 .menu-section a:hover {
 	background: #66cccc;
 	color: white;
 	border-radius: 50px;
 	border: 1px solid #66cccc;
-    transition: 0.5s;
+    transition: 1s;
     opacity: 0.7;
 }
 .header {
 	width: 100%;
-	margin-top: 2%;
-	margin-right: 8%; 
-	margin-bottom: 2%;
+	margin-top: 2%; 
+    margin-bottom: 2%;
     color: #66cccc;
-    font-family: GOTHIC;
     font-size: 20px;
     text-align: center;
 }
@@ -97,7 +89,6 @@ body{
 	margin-right: 23.6%;
 }
 .sub-menu a div {
-	font-family: GOTHIC;
     border-radius: 10px;
     width: 11vw;
     padding: .1vw;
@@ -314,16 +305,13 @@ body{
 /*-----------------------------------------------------------------------------FOOTER*/			    
 footer{
 	width: 100%;
-	margin-top: 15%;
-    margin-right: 8%; 
-    margin-bottom: 5%;
-    font-family: GOTHIC;
-    color: #66cccc;
-    font-size: 0.8vw;
+	margin-top: 10%; 
+    margin-bottom: 1%;
     clear: both;
 }
-footer div p {
+footer .center_block .footer-text{
 	font-size: 0.6vw;
+	color: #777777;
 }
 .line {
     width: 55%; 
@@ -333,7 +321,10 @@ footer div p {
     margin: 0 auto;
 }
 .center_block{
+	margin-top: 1%;
+	margin-bottom: 1%;
 	text-align: center;
+	color: #333333;
 }
 .soc_link{
 	height: 2%; 

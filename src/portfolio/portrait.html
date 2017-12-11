@@ -1,13 +1,17 @@
 <!Doctype html>
 <html lang="en">
 	<head>
-	 <meta charset="UTF-8">
-	 <title>Valentina Romanovskaya</title>
+		<meta charset="UTF-8">
+		<title>Valentina Romanovskaya</title>
 	    <link rel="stylesheet" type="text/css" href="../style/style_portfolio.css">
   		<link rel="shortcut icon" href="../img/vkladka.png" type="image/x-icon" />
+  		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  		<script type="text/javascript">
+		    const TagName = 'portrait';
+		</script>
     </head>
 	<body>
-	  <header>
+	    <header>
 	  		<div class="menu-block">
 	  			<div class="menu-section">
 	  				<a href="../about.html">A B O U T</a>
@@ -25,9 +29,9 @@
 	  				<a href="../contacts.html">C O N T A C T S</a>
 	  			</div>
 		  	</div>
-	  </header>
-	 <h1 class="header">- P O R T R A I T -</h1>
-	 <div class="sub-menu">	
+	    </header>
+	 	<h1 class="header">- P O R T R A I T -</h1>
+	 	<div class="sub-menu">	
 	 	    <a href="../portfolio/wedding.html">
 			  	<div class="wedding" >
 			    	<p class="hovered">WEDDING</p>
@@ -63,41 +67,36 @@
 				    <p class="hovered">FASHION</p>
 				  </div>
 			</a>
-		<!--	<a href="../portfolio/Mportrait.html">
-				  <div class="Mportrait">
-				  	<p>MEN</p>
-				  </div>
-			</a>
-
-			<a href="../portfolio/travel.html">
-				  <div class="travel">
-				  	<p>TRAVEL</p>
-				  </div>
-	  		</a> -->
-	 </div>
-	 <div class="photoalbum">
-	 	<p><br><br><br><br><br><br><br><br><br><br><br> > photo < <br><br><br><br><br><br><br><br><br><br><br></p>
-	 </div>	
-	<footer>
-		<div><br><br><br></div>	
-			<div class = "line" align="center"></div><br><br>
-			   <div class="center_block">
-			     <a href="https://vk.com/romanovskaya.photo">
-			       <img class="hover-link soc_link" src="../img/vk_icon.jpg"></a>
-			     <a href="https://www.instagram.com/valen.romanovskaya/">
-			       <img class="hover-link soc_link" src="../img/insta_icon.jpg"></a>
-			     <a href="https://mywed.ru/ru/photographer/romanovskayav/">
-			       <img class="hover-link soc_link" src="../img/mywed_icon.jpg"></a>
-			   </div><br>
-			    <div class="center_block">
-			    							+38 (099) 119 63 73<br>
-											valen.romanovskaya@gmail.com<br><br>
-								Copyright 2017 © Valentina Romanovskaya - All rights reserved<br>
-						<p>My images may not be reproduced in any form without my written permission. If you're interested to buy my work and the rights to use it, feel<br> free to send me a note. Please don't send me notes with requests to use my work on your own website for free.<p>
-			   </div>
-	</footer>
+	 	</div>
+	 	<div id = "photoalbum" class="photoalbum grid"></div>
+		<div id="overlay">
+	    <div class="gap"></div>
+	    <div class="close-btn hovered"><i class="material-icons clear-ico">clear</i></div>
+	    <div class="gap"></div>
+	    <div class="sheet">
+	    	<div class="backward hovered"><i class="material-icons chevron">chevron_left</i></div>
+	    		<div class="GalleryPhotoSlider"></div>
+	    	<div class="forward hovered"><i class="material-icons chevron">chevron_right</i></div>
+	    </div>	
+	    <div class="gap"></div>
+	    </div>	
+		<footer>
+			<div class = "line" align="center"></div>
+		   	<div class="center_block">
+				<a href="https://vk.com/romanovskaya.photo"><img class="hover-link soc_link" src="../img/vk_icon.jpg"></a>
+				<a href="https://www.instagram.com/valen.romanovskaya/"><img class="hover-link soc_link" src="../img/insta_icon.jpg"></a>
+				<a href="https://mywed.ru/ru/photographer/romanovskayav/"><img class="hover-link soc_link" src="../img/mywed_icon.jpg"></a>
+			</div>
+		    <div class="center_block">
+		    	+38 (099) 119 63 73<br>
+				valen.romanovskaya@gmail.com<br><br>
+				Copyright 2017 © Valentina Romanovskaya - All rights reserved<br>
+				<p class="footer-text">My images may not be reproduced in any form without my written permission. If you're interested to buy my work and the rights to use it, feel<br> free to send me a note. Please don't send me notes with requests to use my work on your own website for free.<p>
+		   </div>
+		</footer>
 		<script src="../js/jquery-3.2.0.js"></script>
 		<script src="../js/jquery.waypoints.min.js"></script>
 		<script src="../js/stiker.js"></script>
+		<script src="../js/dist/Bundle.js"></script>
 	</body>
 </html>
