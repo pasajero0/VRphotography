@@ -256,46 +256,19 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/*width: 73%;
-	margin-left: 12%;
-	margin-right: 12%;*/
 }
 .contacts-text {
 	width: 70%;
 }
-.cont-paragraph {
+.cont-text p {
 	margin-top: 2%;
     margin-bottom: 2%;
     color: #333333;
     font-size: 16px;
     text-align: justify;
 }
-.cont-paragraph span {
+.cont-text span {
 	text-decoration: underline;
-}
-.contacts-text p a{
-	text-decoration: none;
-	display: inline-block;
-	width: 135px;
-	text-align: center;
-    color: #66cccc;
-    text-shadow: 1px 1px 0 #377776;
-    font-family: GOTHIC;
-    font-size: 22px;
-    border: 1px solid white;
-    border-radius: 50px;
-
-}
-.contacts-text p a:hover {
-	text-decoration: none;
-    color: white;
-    font-family: GOTHIC;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: 0.5s;
-    border: 1px solid #66cccc;
-    border-radius: 50px;
-    background-color: #66cccc;
 }
 .form-message {
 	width: 70%;
