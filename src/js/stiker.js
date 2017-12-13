@@ -1,9 +1,9 @@
-var $stiker = $(".sub-menu");
+var stiker = $(".sub-menu");
 
-$stiker.waypoint ( function( direction ) {
+stiker.waypoint ( function( direction ) {
 	if (direction == 'down') {
-		$stiker.addClass ('stop'); 
+		stiker.addClass ('stop'); 
 	} else {
-		$stiker.removeClass ('stop');
+		stiker.removeClass ('stop');
 	};
-}, { offset: '2%' }); 
+}, { offset: '1px' }); 

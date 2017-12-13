@@ -49,7 +49,7 @@ const chevronDisplay = () => {
 
 $('#photoalbum').on('click', 'div', (event) => {
     $('#overlay').css('display', 'block');
-    console.log(event);
+    $('body').css('overflow', 'hidden');
     elem = event.currentTarget;
     chevronDisplay();
     getRel();
@@ -68,7 +68,8 @@ $('#photoalbum').on('click', 'div', (event) => {
 
 $('.close-btn').on('click', () => {
     $('#overlay').css('display', 'none');
+    $('body').css('overflow', 'auto');
     $('div.GalleryPhotoSlide').empty();
 });
 
-console.log('build:prod is done!')
+// npm run build:prod

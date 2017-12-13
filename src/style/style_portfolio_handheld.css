@@ -34,18 +34,25 @@ body{
 	animation: fadeIn 1.5s;
 }
 .menu-block{
+	width: 100%;
+    margin: 0 auto;
+    background-color: white;
 	display: inline-flex;
 	justify-content: center;
-	width: 100%;
 }
 .menu-section-logo {
+	margin-top: 2%;
 	padding: 0% 2%;
-    width: 25%;
+    width: 20%;
 }
 .menu-section {
     margin-top: 6%;
-    width: 11%;
-    font-size: 1vw;	
+    padding: 1px;
+    list-style: none;
+    width: 19%;
+    font-size: 2.2vw;
+    font-family: GOTHIC;
+	
 }
 .menu-section a {
 	display: block;
@@ -55,33 +62,25 @@ body{
 	text-decoration: none;
 	border-radius: 50px;
 	border: 1px solid white;
-	transition: .7s;
+	transition: 0.5s;
 }
 .menu-section a:hover {
 	background: #66cccc;
 	color: white;
 	border-radius: 50px;
 	border: 1px solid #66cccc;
-    transition: 0.7s;
+    transition: 0.5s;
     opacity: 0.7;
 }
 .header {
 	width: 100%;
-	margin-top: 2%; 
+	margin-top: 2%;
+    margin-right: 8%; 
     margin-bottom: 2%;
     color: #66cccc;
-    font-size: 20px;
+    font-family: GOTHIC;
+    font-size: 1.1vw;
     text-align: center;
-}
-@media (max-width: 1150px) {
-	.menu-section {
-	    padding: 1px;
-	    width: 17%;
-	    font-size: 1.5vw;
-	}
-	.header {
-	    font-size: 16px;
-	}
 }
 /*-----------------------------------------------------------------------------SubMENU*/
 .subMenuCont{
@@ -103,7 +102,7 @@ body{
 	text-align: center;
 	font-size: 55px;
 	margin-left: 23.5%;
-	margin-right: 24%;
+	margin-right: 23.6%;
 }
 .sub-menu a div {
     border-radius: 10px;
@@ -239,13 +238,12 @@ body{
     animation: fadeIn 0.5s;
 }
 .overlay-cont{
-	position: fixed;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%; 
-    height: 101%;
+    height: 100%;
 }
 .gap{
 	height: 1%;
@@ -317,47 +315,35 @@ body{
 	border-radius: 5px;
 	margin:  0 auto;
 }
-/*@media (max-width: 1445px) {
-	.GalleryPhotoSlide img {
-		max-width: 980px;
-		max-height: 680px;
-	}
-}
-@media (max-width: 1050px) {
-  	.GalleryPhotoSlide img {
-		max-width: 680px;
-		max-height: 480px;
-	}
-}*/
 /*-----------------------------------------------------------------------------FOOTER*/			    
 footer{
+	margin-top: 50px;
 	width: 100%;
-	margin-top: 10%; 
-    margin-bottom: 1%;
     clear: both;
 }
 .line {
-    width: 55%; 
+    width: 60%; 
     height: 1px; 
     background: #66cccc; 
     border: 0; 
     margin: 0 auto;
 }
 .soc_link{
-	height: 2%; 
-	width: 2%;
+	height: 5vw;
+	padding: 3%;
 }
 .hover-link:hover{ 
     cursor: pointer;
     opacity: 0.6;
 }
 .center_block{
-	margin-top: 1%;
-	margin-bottom: 1%;
 	text-align: center;
 	color: #333333;
+    font-size: 12px;
 }
 .footer-text{
-	font-size: 10px;
+	margin-left: 60px;
+	margin-right: 60px;
 	color: #777777;
+	font-size: 10px;
 }

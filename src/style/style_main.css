@@ -55,15 +55,15 @@ body{
 	text-decoration: none;
 	border-radius: 50px;
 	border: 1px solid white;
-	transition: 1s;
+	transition: .7s;
 }
 .menu-section a:hover {
 	background: #66cccc;
 	color: white;
 	border-radius: 50px;
 	border: 1px solid #66cccc;
-    transition: 1s;
-    opacity: 0.7;
+    transition: .7s;
+    opacity: .7;
 }
 .header {
 	width: 100%;
@@ -72,6 +72,16 @@ body{
     color: #66cccc;
     font-size: 20px;
     text-align: center;
+}
+@media (max-width: 1150px) {
+	.menu-section {
+	    padding: 1px;
+	    width: 17%;
+	    font-size: 1.5vw;
+	}
+	.header {
+	    font-size: 16px;
+	}
 }
 /*О НАС---------------------------------------------------------------------------------------------------ABOUT*/ 
 .about-container { 
@@ -114,6 +124,14 @@ body{
     cursor: pointer;
     transition: 0.5s;
 }
+@media (max-width: 1040px) {
+	.about-container {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	}
+}
 /*ПОРТФОЛИО---------------------------------------------------------------------------------------------------PORTFOLIO*/
 .portfolio-columns{
 	width: 75%;
@@ -145,7 +163,6 @@ body{
 .bar-option p{
     padding: 8%;
     text-align: center;
-    font-family: GOTHIC;
     font-size: 3vw;
 }
 .album-service a{
@@ -220,8 +237,7 @@ body{
 	margin-left: 6%;
 	overflow: hidden; 
 }
-.price-col1 { 
-	background: ;
+.price-col1 {
 	 width: 30%;
 	 padding: 1%; 
 	}
@@ -240,15 +256,26 @@ body{
 .price-col-txt {
 	font-size: 15px;
 	color: #333333;
-	font-family: GOTHIC;
 }
 .italic {
 	font-style: italic;
+	text-align: justify;
 }
 .price-center-txt {
 	font-size: 18px;
 	color: #555555;
 	text-align: center;
+}
+@media (max-width: 1100px){
+	.price-layout div {
+		float: none;
+		padding: 2%;
+		width: 95%;
+	}
+	.price-photo {
+		width: 50%;
+	    margin-left: 25%;
+	}
 }
 /*КОНТАКТЫ---------------------------------------------------------------------------------------------------CONTACTS*/
 .column{
@@ -284,6 +311,7 @@ body{
     height: 120px;
 }
 .f-text {
+	font-family: GOTHIC;
 	float: right;
 	padding-left: 8px;
 	padding: 5.5px;
@@ -298,13 +326,13 @@ body{
 	outline-color: #66cccc;
 }
 .f-textarea {
+	font-family: GOTHIC;
 	padding-left: 8px;
 	width: 65%;
 	max-width: 65%;
 	height: 100%;
 	max-height: 100%;
 	border-radius: 4px;
-	font-family: GOTHIC;
 	color: #777777;
 	border: 1px solid #d6d6d6;
 }
@@ -349,22 +377,12 @@ footer{
     margin-bottom: 1%;
     clear: both;
 }
-footer .center_block .footer-text{
-	font-size: 0.6vw;
-	color: #777777;
-}
 .line {
     width: 55%; 
     height: 1px; 
     background: #66cccc; 
     border: 0; 
     margin: 0 auto;
-}
-.center_block{
-	margin-top: 1%;
-	margin-bottom: 1%;
-	text-align: center;
-	color: #333333;
 }
 .soc_link{
 	height: 2%; 
@@ -373,5 +391,15 @@ footer .center_block .footer-text{
 .hover-link:hover{ 
     cursor: pointer;
     opacity: 0.6;
+}
+.center_block{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	text-align: center;
+	color: #333333;
+}
+.footer-text{
+	font-size: 10px;
+	color: #777777;
 }
 			   
