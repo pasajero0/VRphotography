@@ -278,82 +278,79 @@ body{
 	}
 }
 /*КОНТАКТЫ---------------------------------------------------------------------------------------------------CONTACTS*/
-.column{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.columns{
+	width: 65%;
+	margin-left: 17.5%;
+	margin-right: 17.5%;
 }
 .contacts-text {
-	width: 70%;
+	text-align: justify;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
-.cont-text p {
-	margin-top: 2%;
+.contacts-text p {
+	width: 100%;
+	margin-top: 2%; 
     margin-bottom: 2%;
     color: #333333;
-    font-size: 16px;
-    text-align: justify;
+    font-family: GOTHIC;
+    font-size: 15px;
 }
-.cont-text span {
+.contacts-text span {
+	font-size: 17px;
 	text-decoration: underline;
 }
 .form-message {
-	width: 70%;
+	margin-bottom: 40px;
 }
-.first-column {
-	float: left;
-    width: 48%;
-    height: 120px;
+.form-message-cont {
+ 	display: flex;
+ 	flex-direction: row;
 }
-.second-column {
-	float: right;
-    width: 48%;
-    height: 120px;
+ .first-column {
+ 	display: flex;
+    flex-direction: column;
+ 	width: 80%;
+}
+ .second-column {
+ 	width: 80%;
+ 	margin-right: 10px;
 }
 .f-text {
-	font-family: GOTHIC;
-	float: right;
-	padding-left: 8px;
-	padding: 5.5px;
-	width: 65%;
-	margin-bottom: 2%;
-	height: 20px;
+	padding-left: 10px;
+	margin-right: 10px;
+	font-size: 17px;
+	height: 25px;
 	border-radius: 4px;
-	color: #777777;
+	font-family: GOTHIC;
+	color: #333333;
 	border: 1px solid #d6d6d6;
 }
 .f-text:focus {
 	outline-color: #66cccc;
 }
 .f-textarea {
-	font-family: GOTHIC;
-	padding-left: 8px;
-	width: 65%;
-	max-width: 65%;
-	height: 100%;
+	padding-left: 10px;
+	font-size: 17px;
+	width: 96%;
+    height: 85%;
 	max-height: 100%;
 	border-radius: 4px;
-	color: #777777;
+	font-family: GOTHIC;
+	color: #333333;
 	border: 1px solid #d6d6d6;
 }
 .f-textarea:focus {
 	outline-color: #66cccc;
 }
-.clear {
-	height: 150px;
-}
-.button-cont {
-    width: 100%;
-    max-width: 250px;
-    cursor: pointer;
-    font: normal 14px GOTHIC;
-    letter-spacing: 3px;
-    color: #474747;
-    margin: 0 auto;
-    background-color: ;
+.button-container{
+	display: flex;
+    justify-content: center;
+	width: 100%;
+	margin-top: 20px;
 }
 .button {
-	width: 100%;
+	width: 30%;
 	height: 100%;
 	font-size: 18px;
 	padding: 8px;
@@ -370,10 +367,35 @@ body{
 	cursor: pointer;
     transition: 0.5s;
 }
+@media (max-width: 1040px) {
+	.columns{
+		width: 75%;
+		margin-left: 11%;
+		margin-right: 11%;
+	}
+	.form-message-cont {
+	 	display: flex;
+	 	flex-direction: column;
+	 	align-items: center;
+	}
+	 .first-column {
+	 	display: flex;
+	 	justify-content: center;
+	 	width: 80%;
+	    height: 150px;
+	}
+	 .second-column {
+	 	display: flex;
+	 	justify-content: center;
+	 	width: 80%;
+	    height: 150px;
+	}
+
+}
 /*ПОДВАЛ---------------------------------------------------------------------------------------------------FOOTER*/
 footer{
 	width: 100%;
-	margin-top: 10%; 
+	margin-top: 5%; 
     margin-bottom: 1%;
     clear: both;
 }
