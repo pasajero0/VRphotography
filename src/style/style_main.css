@@ -318,7 +318,7 @@ body{
 }
 .f-text {
 	padding-left: 10px;
-	margin-right: 10px;
+	margin-right: 30px;
 	font-size: 17px;
 	height: 25px;
 	border-radius: 4px;
@@ -390,7 +390,9 @@ body{
 	 	width: 80%;
 	    height: 150px;
 	}
-
+	.f-text {
+		margin-right: 10px;
+	}
 }
 /*ПОДВАЛ---------------------------------------------------------------------------------------------------FOOTER*/
 footer{

@@ -308,14 +308,14 @@ body{
 	justify-content: center;
 	align-items: center;
 	width: 5vw;
-	height: 850px;
+	height: 100vh;
 }
 .forward{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 5vw;
-	height: 850px;
+	height: 100vh;
 }
 .hovered:hover i{	
 	cursor: pointer;
@@ -326,20 +326,14 @@ body{
     justify-content: center;
 }
 .GalleryPhotoSlide img {
-	max-height: 45vw;
+	/*max-height: 90vh;*/
 	border-radius: 5px;
-	margin:  0 auto;
+	margin: 0 auto;
 }
-/*@media (max-width: 1445px) {
+/*@media (max-width: 1600px) {
 	.GalleryPhotoSlide img {
 		max-width: 980px;
 		max-height: 680px;
-	}
-}
-@media (max-width: 1050px) {
-  	.GalleryPhotoSlide img {
-		max-width: 680px;
-		max-height: 480px;
 	}
 }*/
 /*-----------------------------------------------------------------------------FOOTER*/			    
