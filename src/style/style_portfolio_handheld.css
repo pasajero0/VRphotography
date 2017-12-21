@@ -27,6 +27,14 @@
 	transform: none;
   }
 } 
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
 /*-----------------------------------------------------------------------------MENU*/
 body{
 	font-family: GOTHIC;
@@ -163,16 +171,8 @@ body{
 	background-image: url(../img/family.jpg);
     background-size: 100%;
 }
-.Mportrait{
-	background-image: url(../img/Mportrait.jpg);
-	background-size: 100%;
-}
-.travel{
-	background-image: url(../img/travel.jpg);
-	background-size: 100%;
-}
 /*-----------------------------------------------------------------------------GALLERY-BLOCK*/			   
-.item{
+.item, .item2{
 	display: flex;
   	align-items: stretch;
   	justify-content: center;
@@ -181,17 +181,8 @@ body{
 }
 .item2{
 	grid-area: span 2;
-	display: flex;
-  	align-items: stretch;
-  	justify-content: center;
-  	cursor: pointer;
-  	animation: fadeIn 1.5s;
 }
-.item img{
-	object-fit: cover;
-  	overflow: hidden;
-}
-.item2 img{
+.item img, .item2 img{
 	object-fit: cover;
   	overflow: hidden;
 }
@@ -293,14 +284,7 @@ body{
 	width: 80vw;
 	margin-bottom: 20px;
 }
-.backward{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 5vw;
-	height: 95vh;
-}
-.forward{
+.backward,.forward{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -310,15 +294,35 @@ body{
 .hovered:hover i{	
 	cursor: pointer;
 }
-.GalleryPhotoSlider {
+.GalleryPhotoSlider, .preloader {
     display: flex;
     flex-direction: column;
     justify-content: center;
+	width: 80vw;
+	height: 90vh;
 }
 .GalleryPhotoSlide img {
 	border-radius: 5px;
 	margin:  0 auto;
 	object-fit: contain;
+	z-index: 3;
+	/*animation: fadeIn 0.5s;*/
+}
+.preloader{
+	display: flex;
+	position: fixed;
+	z-index: 2;
+	margin:  0 auto;
+	object-fit: contain;
+	align-items: center;
+}
+.loader{
+	width: 50px;
+    height: 50px;
+    border: 5px solid white;
+    border-top-color: #66cccc;
+    border-radius: 50%;
+    animation: spin .3s infinite linear;
 }
 /*-----------------------------------------------------------------------------FOOTER*/			    
 footer{

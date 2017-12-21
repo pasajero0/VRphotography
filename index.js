@@ -35,6 +35,7 @@ let wh = $(window).height();
 const getRel = () => {
     const thisLargePhoto = $(elem).children().attr('rel');
     $('div.GalleryPhotoSlider').empty();
+    $('.GalleryPhotoSlider').append('<div class="preloader"><div class="loader"></div></div>');
     $('.GalleryPhotoSlider').append('<div class="GalleryPhotoSlide"><img src="'+thisLargePhoto+'"></div>');
     if (ww > wh){
         if(elemClass == 'item'){
