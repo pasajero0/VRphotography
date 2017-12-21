@@ -34,31 +34,25 @@ let wh = $(window).height();
 
 const getRel = () => {
     const thisLargePhoto = $(elem).children().attr('rel');
-    $('div.GalleryPhotoSlide').empty();
+    $('div.GalleryPhotoSlider').empty();
     $('.GalleryPhotoSlider').append('<div class="GalleryPhotoSlide"><img src="'+thisLargePhoto+'"></div>');
     if (ww > wh){
         if(elemClass == 'item'){
             $('.GalleryPhotoSlide>img').css('max-width','80vw');
-            $('.GalleryPhotoSlide>img').css('max-height','90vh');
             console.log('if item');
         }else if(elemClass == 'item2'){
             $('.GalleryPhotoSlide>img').css('max-height','90vh');
-            $('.GalleryPhotoSlide>img').css('max-width','80vw');
             console.log('if item2');
         }
-        console.log("ww");
     } else if (ww < wh){
         if(elemClass == 'item'){
+            $('.GalleryPhotoSlide>img').css('max-height','50vh');
             $('.GalleryPhotoSlide>img').css('max-width','80vw');
-            $('.GalleryPhotoSlide>img').css('max-height','42vh');
-            console.log('if item');
         }else if(elemClass == 'item2'){
-            $('.GalleryPhotoSlide>img').css('max-height','90vh');
-            $('.GalleryPhotoSlide>img').css('max-width','75vw');
-            console.log('if item2');
+            $('.GalleryPhotoSlide>img').css('max-height','70vh');
+            $('.GalleryPhotoSlide>img').css('max-width','70vw');
         }
-        console.log('wh');
-    }; 
+    };  
 };
 const chevronDisplay = () => {
     const next = $(elem).next().children().attr('rel');

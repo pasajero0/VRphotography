@@ -201,8 +201,12 @@ body{
   	cursor: pointer;
   	animation: fadeIn 1.5s;
 }
-.item .item2 img{
-	transform: scale(1.4);
+.item img{
+	object-fit: cover;
+  	overflow: hidden;
+}
+.item2 img{
+	object-fit: cover;
   	overflow: hidden;
 }
 .grid div a {
@@ -247,7 +251,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.8);
     z-index: 100;
     animation: fadeIn 0.5s;
 }
@@ -302,6 +306,7 @@ body{
 .GalleryPhotoSlide {
 	display: flex;
 	width: 80vw;
+	margin-bottom: 20px;
 }
 .backward{
 	display: flex;
@@ -326,16 +331,10 @@ body{
     justify-content: center;
 }
 .GalleryPhotoSlide img {
-	/*max-height: 90vh;*/
 	border-radius: 5px;
-	margin: 0 auto;
+	margin:  0 auto;
+	object-fit: contain;
 }
-/*@media (max-width: 1600px) {
-	.GalleryPhotoSlide img {
-		max-width: 980px;
-		max-height: 680px;
-	}
-}*/
 /*-----------------------------------------------------------------------------FOOTER*/			    
 footer{
 	width: 100%;
