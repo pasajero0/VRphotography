@@ -279,9 +279,9 @@ body{
 }
 /*КОНТАКТЫ---------------------------------------------------------------------------------------------------CONTACTS*/
 .columns{
-	width: 65%;
-	margin-left: 17.5%;
-	margin-right: 17.5%;
+	width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 .contacts-text {
 	text-align: justify;
@@ -366,6 +366,13 @@ body{
 	box-shadow: 0px 0px 5px gray;
 	cursor: pointer;
     transition: 0.5s;
+}
+@media (max-width: 1400px) {
+	.columns {
+	    width: 64%;
+	    margin-left: 18%;
+	    margin-right: 18%;
+	}
 }
 @media (max-width: 1040px) {
 	.columns{

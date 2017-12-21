@@ -336,7 +336,7 @@ body{
     border: 5px solid white;
     border-top-color: #66cccc;
     border-radius: 50%;
-    animation: spin .3s infinite linear;
+    animation: spin .4s infinite linear;
 }
 /*-----------------------------------------------------------------------------FOOTER*/			    
 footer{
