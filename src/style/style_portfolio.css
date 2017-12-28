@@ -87,7 +87,7 @@ body{
 .header {
 	width: 100%;
 	margin-top: 2%; 
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     color: #66cccc;
     font-size: 20px;
     text-align: center;
@@ -361,10 +361,10 @@ footer{
     opacity: 0.6;
 }
 .center_block{
-	margin-top: 1%;
-	margin-bottom: 1%;
-	text-align: center;
-	color: #333333;
+	margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    color: #777777;
 }
 .footer-text{
 	font-size: 10px;

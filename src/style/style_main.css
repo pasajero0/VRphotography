@@ -68,7 +68,7 @@ body{
 .header {
 	width: 100%;
 	margin-top: 2%; 
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     color: #66cccc;
     font-size: 20px;
     text-align: center;
@@ -96,9 +96,10 @@ body{
 	margin-right: 20px;
 }
 .photo-VR {
-	width: 520px;
+	width: 450px;
+    margin-left: 10%;
 	border-radius: 50%;
-	box-shadow: 0 0 15px rgba(0,0,0,1); 
+	box-shadow: 0 0 5px rgba(0,0,0,1); 
 }
 .col-txt {
 	display: flex;
@@ -107,8 +108,8 @@ body{
 	width: 530px;
 	margin-left: 20px;
 	margin-right: 20px;
-	font-size: 16px;
-	color: #333333;
+	font-size: 15px;
+	color: #444444;
 	text-align: justify;
 }
 .col-txt p {
@@ -232,9 +233,11 @@ body{
 	margin-bottom: 3%;	
 }
 .price-photo{
+	height: 260px;
 	width: 22vw;
 	border-radius: 15px;
 	margin-left: 6%;
+    object-fit: cover;
 	overflow: hidden; 
 }
 .price-col1 {
@@ -255,16 +258,17 @@ body{
 }
 .price-col-txt {
 	font-size: 15px;
-	color: #333333;
+	color: #444444;
 }
 .italic {
 	font-style: italic;
-	text-align: justify;
+	text-align: center;
 }
 .price-center-txt {
-	font-size: 18px;
+	font-size: 16px;
 	color: #555555;
 	text-align: center;
+	font-weight: bold;
 }
 @media (max-width: 1100px){
 	.price-layout div {
@@ -274,6 +278,7 @@ body{
 	}
 	.price-photo {
 		width: 50%;
+		object-fit: cover;
 	    margin-left: 25%;
 	}
 }
@@ -292,12 +297,11 @@ body{
 	width: 100%;
 	margin-top: 2%; 
     margin-bottom: 2%;
-    color: #333333;
+    color: #444444;
     font-family: GOTHIC;
     font-size: 15px;
 }
 .contacts-text span {
-	font-size: 17px;
 	text-decoration: underline;
 }
 .form-message {
@@ -319,11 +323,11 @@ body{
 .f-text {
 	padding-left: 10px;
 	margin-right: 30px;
-	font-size: 17px;
+	font-size: 12px;
 	height: 25px;
 	border-radius: 4px;
 	font-family: GOTHIC;
-	color: #333333;
+	color: #444444;
 	border: 1px solid #d6d6d6;
 }
 .f-text:focus {
@@ -331,13 +335,13 @@ body{
 }
 .f-textarea {
 	padding-left: 10px;
-	font-size: 17px;
+	font-size: 12px;
 	width: 96%;
     height: 85%;
 	max-height: 100%;
 	border-radius: 4px;
 	font-family: GOTHIC;
-	color: #333333;
+	color: #444444;
 	border: 1px solid #d6d6d6;
 }
 .f-textarea:focus {
@@ -350,7 +354,7 @@ body{
 	margin-top: 20px;
 }
 .button {
-	width: 30%;
+	width: 20%;
 	height: 100%;
 	font-size: 18px;
 	padding: 8px;
@@ -404,9 +408,12 @@ body{
 /*ПОДВАЛ---------------------------------------------------------------------------------------------------FOOTER*/
 footer{
 	width: 100%;
-	margin-top: 5%; 
+	margin-top: 10%;
     margin-bottom: 1%;
     clear: both;
+}
+.margBottom{
+	margin-bottom: 3% !important;
 }
 .line {
     width: 55%; 
@@ -423,11 +430,14 @@ footer{
     cursor: pointer;
     opacity: 0.6;
 }
-.center_block{
-	margin-top: 1%;
-	margin-bottom: 1%;
-	text-align: center;
-	color: #333333;
+.center_block {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    color: #777777;
+}
+.center_block span {
+	font-size: 12px;
 }
 .footer-text{
 	font-size: 10px;

@@ -52,7 +52,7 @@ body{
 	width: 100%;
 	margin-top: 2%;
     margin-right: 8%; 
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     color: #66cccc;
     font-family: GOTHIC;
     font-size: 1.1vw;
@@ -75,12 +75,12 @@ body{
 	margin: 0 auto;
 	width: 40vw;
 	border-radius: 100%;
-	box-shadow: 0 0 13px rgba(0,0,0,0.5); 
+	box-shadow: 0 0 5px rgba(0,0,0,0.5); 
 }
 .col-txt {
 	margin: 60px;
 	font-size: 14px;
-	color: #333333;
+	color: #444444;
 	text-align: justify;
 }
 .col-txt .paragraph-link{
@@ -217,7 +217,7 @@ body{
 }
 .price-col-txt {
 	font-size: 15px;
-	color: #333333;
+	color: #444444;
 	font-family: GOTHIC;
 }
 .italic {
@@ -243,12 +243,11 @@ body{
 	width: 100%;
 	margin-top: 2%; 
     margin-bottom: 2%;
-    color: #333333;
+    color: #444444;
     font-family: GOTHIC;
     font-size: 15px;
 }
 .contacts-text span {
-	font-size: 17px;
 	text-decoration: underline;
 }
 .form-message {
@@ -269,13 +268,13 @@ body{
 }
 .f-text {
 	padding-left: 10px;
-	font-size: 17px;
+	font-size: 12px;
 	width: 98%;
 	margin-bottom: 15px;
 	height: 25px;
 	border-radius: 4px;
 	font-family: GOTHIC;
-	color: #333333;
+	color: #444444;
 	border: 1px solid #d6d6d6;
 }
 .f-text:focus {
@@ -283,13 +282,13 @@ body{
 }
 .f-textarea {
 	padding-left: 10px;
-	font-size: 17px;
+	font-size: 12px;
 	width: 98%;
 	height: 95%;
 	max-height: 100%;
 	border-radius: 4px;
 	font-family: GOTHIC;
-	color: #333333;
+	color: #444444;
 	border: 1px solid #d6d6d6;
 }
 .f-textarea:focus {
@@ -322,6 +321,9 @@ footer{
 	width: 100%;
     clear: both;
 }
+.margBottom{
+	margin-bottom: 3% !important;
+}
 .line {
     width: 60%; 
     height: 1px; 
@@ -340,7 +342,7 @@ footer{
 .center_block{
 	font-family: GOTHIC;
 	text-align: center;
-	color: #333333;
+    color: #777777;
     font-size: 12px;
 }
 .footer-text{
